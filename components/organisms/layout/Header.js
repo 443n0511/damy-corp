@@ -32,7 +32,9 @@ export const Header = memo(function Header() {
             href='/'
             fontSize={{ base: "2xl", md: "3xl" }}
             onClose={scrollToTop}>
-            <a to='/'>株式会社sample</a>
+            <NextLink href={"/"} passHref>
+              <Link>株式会社Sample</Link>
+            </NextLink>
           </Heading>
         </Flex>
         <Flex
